@@ -1,0 +1,160 @@
+/* === Global Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background: linear-gradient(-45deg, #f5f5f5, #eaeaea, #f5f5f5);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  padding: 2rem;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #333;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* === Sections === */
+section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-4px);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #444;
+  border-left: 4px solid #999;
+  padding-left: 0.5rem;
+}
+
+section p, section ul {
+  font-size: 1rem;
+  color: #333;
+}
+
+section ul {
+  padding-left: 1.2rem;
+}
+
+section li {
+  margin-bottom: 0.8rem;
+}
+
+section a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+section a:hover {
+  color: #004499;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ccc;
+}
+
+/* === Background Animation === */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}
+
+/* === Image Styling for Gallery === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Optional: Limit image size for large screens */
+.gallery-item img {
+  max-width: 600px;
+}
+
