@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcube Introduction Video</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <header>
+<nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    <div class = "container">
+	<h1>Bitcube Introduction Video</h1>
+</header>	
+
+<div style="max-width: 800px; margin: auto;">
+
+	<video controls style = "max-width: 100%; max-height:100vh; display: block; margin: auto;">
+	
+	<source src= "videos/bitcube_introduction_video.mp4"type="video/mp4"> 
+	 your browser does not support the video tag.
+	 </video>
+	 <br />
+	 <a href="videos/bitcube_introduction_video.mp4" download style = "display: block; text-align: center; margin-top: 10px;"> 
+	 Download This Video 
+	 </a>
+	 </div>
+
+    <footer>
+        <p>&copy; 2025 Wandile Nhlapo</p>
+    </footer>
+ 
+</body>
+</html>
+
